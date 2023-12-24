@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-$END$
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <img src="img/yourLogo.png" alt="logo" class="responsive-img" style="height: 100px; width: 100px; margin-top: 50px">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m8 l6 offset-m2 offset-l3">
+            <h1 class="center-align mb5" style="margin-bottom: 100px">BMI Calculator</h1>
+            <form id="bmiForm">
+                <div class="input-field">
+                    <input type="number" id="weight" name="weight">
+                    <label for="weight">Weight (in kilograms):</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" id="height" name="height">
+                    <label for="height">Height (in centimeters):</label>
+                </div>
+                <button type="submit" class="btn waves-effect waves-light" style="margin-top: 25px">Calculate BMI</button>
+            </form>
+            <div id="result" class="left-align" style="margin-top: 35px;"></div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer white" style="margin-bottom: 25px;">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 l6 offset-m2 offset-l3">
+                <h5 class="black-text" style="font-size: 18px;">BMI Calculator</h5>
+                <p class="black-text">Prawa autorskie © 2024 Wszelkie prawa zastrzeżone</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
